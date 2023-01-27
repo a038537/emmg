@@ -286,7 +286,7 @@ void readkeys(){
 		for(int j = 0; j<8; j++){
 			fgets(tkey,99,fp);
 			for(idx = 0;idx < 8;idx++){
-				sscanf(&tkey[idx*3],"%02x ",&p00[j][idx]);
+				sscanf(&tkey[idx*3],"%hhx ",&p00[j][idx]);
 				//fclose(fp);
 			}
 			if(feof(fp))fclose(fp);
@@ -295,7 +295,7 @@ void readkeys(){
 		for(int j = 0; j<8; j++){
 			fgets(tkey,99,fp);
 			for(idx = 0;idx < 8;idx++){
-				sscanf(&tkey[idx*3],"%02x ",&p10[j][idx]);
+				sscanf(&tkey[idx*3],"%hhx ",&p10[j][idx]);
 				//fclose(fp);
 			}
 			if(feof(fp))fclose(fp);
@@ -304,7 +304,7 @@ void readkeys(){
 		for(int j = 0; j<8; j++){
 			fgets(tkey,99,fp);
 			for(idx = 0;idx < 8;idx++){
-				sscanf(&tkey[idx*3],"%02x ",&p20[j][idx]);
+				sscanf(&tkey[idx*3],"%hhx ",&p20[j][idx]);
 				//fclose(fp);
 			}
 			if(feof(fp))fclose(fp);
@@ -313,7 +313,7 @@ void readkeys(){
 		for(int j = 0; j<8; j++){
 			fgets(tkey,99,fp);
 			for(idx = 0;idx < 8;idx++){
-				sscanf(&tkey[idx*3],"%02x ",&p30[j][idx]);
+				sscanf(&tkey[idx*3],"%hhx ",&p30[j][idx]);
 				//fclose(fp);
 			}
 			if(feof(fp))fclose(fp);

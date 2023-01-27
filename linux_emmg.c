@@ -105,7 +105,7 @@ while(true){
             fgets(temm,200,fp);
 			//printf(temm);
 			for(int idx = 0;idx < 33;idx++){
-				sscanf(&temm[idx*3],"%02x ",&tbuffer[idx]);
+				sscanf(&temm[idx*3],"%hhx ",&tbuffer[idx]);
 			}
 					
 			//file.read (tbuffer,33);
